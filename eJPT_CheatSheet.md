@@ -146,7 +146,12 @@ john <Hash_Password-File> --wordlist=/usr/share/wordlists/rockyou.txt # To crack
 unshadow passwd shadow > unshadowed.txt
 john --wordlist=/usr/share/wordlists/rockyou.txt unshadowed.txt
 ```
+#### Find WeakPermissions in Linux
+find / -not -type l -perm -o+x
 
+
+
+```
 ## XSS
 ```sh
 <script>alert(1)</script>
